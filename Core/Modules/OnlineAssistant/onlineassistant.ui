@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OnlineAssistant</class>
+ <widget class="QWidget" name="OnlineAssistant">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>286</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QScrollBar:vertical {
+      background-color: transparent;
+      width: 10px;
+      margin: 1px 5 5px 0;
+  }
+  QScrollBar::handle:vertical {
+      background: #bdc3c7;
+	  min-height: 35px;
+	  max-height: 50px;
+	  border-radius: 2px;
+  }
+  QScrollBar::add-line:vertical {
+		background-color: transparent;
+		border: none;
+		outline: none;
+		
+  }
+
+  QScrollBar::sub-line:vertical {
+      background-color: transparent;
+		border: none;
+		outline: none;
+
+  }
+  QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     background-color: transparent;
+		border: none;
+		outline: none;
+  }
+
+  QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+      background: none;
+  }
+
+QHeaderView::section
+{
+margin: 2px;
+background-color: rgba(0, 0, 0, 0);
+border: 0px solid #FDFDFD;
+}
+
+QListView{
+	font: 9pt &quot;Open Sans&quot;;
+	outline: none;
+}
+
+QListView::item:hover {
+    background: #ecf0f1;
+	outline: none;
+ }
+
+QComboBox  {
+    border: 1px solid #3498DB;
+	border-radius: 2px;
+    padding-left: 2px;
+}
+
+QComboBox::down-arrow  {
+    image: url(':/Arrow/down_arrow_afterUpload');
+	background-color: #34495e;
+}
+
+QComboBox::drop-down  {
+	background-color: #34495e;
+	border: none;
+}
+
+QComboBox QAbstractItemView  {
+    selection-background-color: #2980b9;
+	outline: none;
+	color: #ecf0f1;
+	selection-color: white;
+}
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 1px;
+     padding-left: 2px;
+ }
+
+QGroupBox {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    margin-top: 10px;
+	color: #95a5a6;
+}
+
+QGroupBox::title {
+	color: #34495e;
+    subcontrol-origin: margin;
+    subcontrol-position: top center; /* position at the top center */
+    padding: 0 3px;
+}
+
+QSpinBox  {
+	background-color: #3498db;
+	color: #34495e;
+}
+
+QSpinBox:hover{
+	background-color: #2980b9;
+}
+ 
+QSpinBox::up-button  {
+  	background-color: #2c3e50;
+	subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+ 
+    width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+}
+
+ 
+QSpinBox::up-arrow  {
+    image: url(:/Arrow/arrow_menu);
+}
+ 
+ 
+QSpinBox::down-button  {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+ 
+    width: 16px;
+    background-color: #2c3e50;
+    border-width: 1px;
+    border-top-width: 0;
+}
+
+ 
+QSpinBox::down-button:pressed  {
+    /*border-image: url(:/images/spindown_pressed.png) 1;*/
+	background-color: #2980b9;
+}
+ 
+QSpinBox::down-arrow  {
+    image: url(:/Arrow/arrow_menu_down);
+}
+ 
+QSpinBox::down-arrow:disabled,
+QSpinBox::down-arrow:off  { /* off state when value in min */
+   image: url(:/images/down_arrow_disabled.png);
+}
+
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/CheckBox/checkbox_unchecked);
+}
+
+QCheckBox::indicator:unchecked:hover {
+    image: url(:/CheckBox/checkbox_unchecked_hover);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/CheckBox/checkbox_unchecked_pressed);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/CheckBox/checkbox_normal);
+}
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="widget_TopMacButtons" native="true">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>4</y>
+     <width>41</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButton_Exit_2">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: none;
+	image: url(:/Exit/exit_mac_os);
+}
+QPushButton:hover{
+	image: url(:/Exit/exit_hover_mac_os);
+}</string>
+      </property>
+      <property name="text">
+       <string notr="true"/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>18</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_Reduce_2">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: none;
+	image: url(:/Reduce/reduce_mac_os);
+}
+QPushButton:hover{
+	image: url(:/Reduce/reduce_hover_mac_os);
+}</string>
+      </property>
+      <property name="text">
+       <string notr="true"/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>28</width>
+        <height>18</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_Background_border">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>0</y>
+     <width>431</width>
+     <height>275</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #34495e; /*#3498DB #E2EAEB  (46, 64, 82, 245)*/;
+border-radius: 1px;
+/*border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;*/</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backgroundPage1">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>20</y>
+     <width>423</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F4F7F7;
+
+border-top: 60px solid #2c3e50;/*#E2EAEB*/
+</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Exit">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>0</y>
+     <width>26</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border: none;
+	image: url(:/Exit/exit_windows_os);
+}
+QPushButton:hover{
+	image: url(:/Exit/exit_hover_windows_os);
+}</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>19</y>
+     <width>421</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <pointsize>9</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(0, 0, 0, 0);</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <widget class="QLabel" name="label_Please_Chooste_Topic">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>371</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #3498db;</string>
+     </property>
+     <property name="text">
+      <string>Please choose a topic</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Help_And_Support">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>401</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #3498db;</string>
+     </property>
+     <property name="text">
+      <string>Help &amp; Support</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>401</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>5</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>3</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QToolButton" name="toolButton_Online_Help">
+        <property name="minimumSize">
+         <size>
+          <width>56</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border: none;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #ecf0f1;
+	color: #3498db;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QToolButton::hover{
+	background-color: #DEE4E7;
+}</string>
+        </property>
+        <property name="text">
+         <string>Online Help</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Design/design.qrc">
+          <normaloff>:/CustomerService/CustomerService</normaloff>:/CustomerService/CustomerService</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QToolButton" name="toolButton_Screenshot">
+        <property name="minimumSize">
+         <size>
+          <width>56</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border: none;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #ecf0f1;
+	color: #3498db;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QToolButton::hover{
+	background-color: #DEE4E7;
+}</string>
+        </property>
+        <property name="text">
+         <string notr="true">Screenshot</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Design/design.qrc">
+          <normaloff>:/Screenshot/screenshot_big</normaloff>:/Screenshot/screenshot_big</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QToolButton" name="toolButton_Image_Editor">
+        <property name="minimumSize">
+         <size>
+          <width>56</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border: none;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #ecf0f1;
+	color: #3498db;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QToolButton::hover{
+	background-color: #DEE4E7;
+}</string>
+        </property>
+        <property name="text">
+         <string notr="true">Image Editor</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Design/design.qrc">
+          <normaloff>:/ScreenShotMenu/edit_hover</normaloff>:/ScreenShotMenu/edit_hover</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QToolButton" name="toolButton_Premium">
+        <property name="minimumSize">
+         <size>
+          <width>56</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border: none;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #ecf0f1;
+	color: #f39c12;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QToolButton::hover{
+	background-color: #DEE4E7;
+}</string>
+        </property>
+        <property name="text">
+         <string notr="true">Premium</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Design/design.qrc">
+          <normaloff>:/Premium/premium_icon</normaloff>:/Premium/premium_icon</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QToolButton" name="toolButton_Upload">
+        <property name="minimumSize">
+         <size>
+          <width>56</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border: none;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #ecf0f1;
+	color: #3498db;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QToolButton::hover{
+	background-color: #DEE4E7;
+}</string>
+        </property>
+        <property name="text">
+         <string notr="true">Upload</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Design/design.qrc">
+          <normaloff>:/ScreenShotMenu/upload_hover</normaloff>:/ScreenShotMenu/upload_hover</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QToolButton" name="toolButton_Gif_Creator">
+        <property name="minimumSize">
+         <size>
+          <width>56</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border: none;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #ecf0f1;
+	color: #3498db;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QToolButton::hover{
+	background-color: #DEE4E7;
+}</string>
+        </property>
+        <property name="text">
+         <string notr="true">Gif Creator</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Design/design.qrc">
+          <normaloff>:/ScreenShotMenu/gifcreator_hover</normaloff>:/ScreenShotMenu/gifcreator_hover</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QToolButton" name="toolButton_Security">
+        <property name="minimumSize">
+         <size>
+          <width>56</width>
+          <height>75</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QToolButton{
+	border: none;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #ecf0f1;
+	color: #3498db;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QToolButton::hover{
+	background-color: #DEE4E7;
+}</string>
+        </property>
+        <property name="text">
+         <string>Security</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../../../Design/design.qrc">
+          <normaloff>:/Security/security_big_blue</normaloff>:/Security/security_big_blue</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>50</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextUnderIcon</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_More_Help">
+     <property name="geometry">
+      <rect>
+       <x>296</x>
+       <y>230</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>8</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href='http://vpictu.re/help' style='color: #2980b9;  text-decoration: none;'&gt;More help&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <property name="openExternalLinks">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <widget class="QLabel" name="label_Online_Help_Text">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #3498db;</string>
+     </property>
+     <property name="text">
+      <string>Online Help</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>97</y>
+       <width>231</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextEdit{
+color: #95a5a6;
+background-color: white;
+border: 2px solid #3498db
+}</string>
+     </property>
+     <property name="documentTitle">
+      <string>Online Help</string>
+     </property>
+     <property name="lineWrapMode">
+      <enum>QTextEdit::WidgetWidth</enum>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;title&gt;Online Help&lt;/title&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Open Sans'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="acceptRichText">
+      <bool>false</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Click here to ask your question</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Ask_Us">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>211</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #3498db;</string>
+     </property>
+     <property name="text">
+      <string>Ask us what is going on</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Online_Help_Icon">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #3498db;</string>
+     </property>
+     <property name="text">
+      <string notr="true"/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../../../Design/design.qrc">:/CustomerService/CustomerService</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_Information">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>94</y>
+       <width>151</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #3498db;</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;You will receive a response by Notification system when an advisor is available&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Ask">
+     <property name="geometry">
+      <rect>
+       <x>114</x>
+       <y>221</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border: 1px solid #3498DB;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #258FD6;
+	color: #FFEBEE;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QPushButton::hover{
+	background-color: #3498db;
+}</string>
+     </property>
+     <property name="text">
+      <string>Ask</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_Cancel">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>221</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border: 1px solid #3498DB;
+	min-width: 50px;
+	padding: 3px;
+	background-color: #258FD6;
+	color: #FFEBEE;
+	font: 8pt &quot;Open Sans&quot;;
+}
+
+QPushButton::hover{
+	background-color: #3498db;
+}</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_wordsNumber">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>196</y>
+       <width>231</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Open Sans</family>
+       <pointsize>7</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #3498db;
+color: white;</string>
+     </property>
+     <property name="text">
+      <string notr="true">253</string>
+     </property>
+     <property name="margin">
+      <number>4</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>label_Background_border</zorder>
+  <zorder>backgroundPage1</zorder>
+  <zorder>stackedWidget</zorder>
+  <zorder>widget_TopMacButtons</zorder>
+  <zorder>pushButton_Exit</zorder>
+ </widget>
+ <resources>
+  <include location="../../../Design/design.qrc"/>
+ </resources>
+ <connections/>
+</ui>

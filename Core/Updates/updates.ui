@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Updates</class>
+ <widget class="QWidget" name="Updates">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>326</width>
+    <height>160</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Form</string>
+  </property>
+  <widget class="QLabel" name="label_Background_border">
+   <property name="geometry">
+    <rect>
+     <x>-3</x>
+     <y>-1</y>
+     <width>329</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#label_Background_border{
+background-color: rgba(21, 30, 38, 190); /*#3498DB #E2EAEB  (46, 64, 82, 245)*/;
+border-radius: 1px;
+}
+/*border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;*/</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>20</y>
+     <width>318</width>
+     <height>93</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Open Sans</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+background-color: white;
+}</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="plainText">
+    <string>A new version is beeing downloaded.
+Please wait until it is done</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_TopMacButtons" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>3</y>
+     <width>41</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_7">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButton_Exit_2">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: none;
+	image: url(:/Exit/exit_mac_os);
+}
+QPushButton:hover{
+	image: url(:/Exit/exit_hover_mac_os);
+}</string>
+      </property>
+      <property name="text">
+       <string notr="true"/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>18</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_Reduce_2">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	border: none;
+	image: url(:/Reduce/reduce_mac_os);
+}
+QPushButton:hover{
+	image: url(:/Reduce/reduce_hover_mac_os);
+}</string>
+      </property>
+      <property name="text">
+       <string notr="true"/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>28</width>
+        <height>18</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Exit">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>-1</y>
+     <width>26</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border: none;
+	image: url(:/Exit/exit_windows_os);
+}
+QPushButton:hover{
+	image: url(:/Exit/exit_hover_windows_os);
+}</string>
+   </property>
+   <property name="text">
+    <string notr="true"/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>26</width>
+     <height>18</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>0</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: bold 9pt &quot;Open Sans&quot;;
+color: #3498db;
+</string>
+   </property>
+   <property name="text">
+    <string notr="true">vPicture</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar_Upload">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>124</y>
+     <width>318</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QProgressBar {
+     border-radius: 3px;
+	 background-color: #EBEDEF;
+     height: 6px;
+ }
+
+ QProgressBar::chunk {
+     background-color: #3498DB;
+	 border-top-left-radius: 3px; 
+     border-bottom-left-radius: 3px;
+	 border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+ }
+
+</string>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+   <property name="format">
+    <string notr="true">%p%</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+https://www.facebook.com/dialog/share?app_id=273349419483656&display=popup&href=http://vpictu.re/&redirect_uri=http://vpictu.re/
+
+https://twitter.com/intent/tweet?text=vPicture,%20mon%20h%C3%A9bergeur%20d%27image%20favoris&url=http://vpictu.re/&related=
+
+https://mail.google.com/mail/?view=cm&fs=1&to&su=Mon hébergeur d'image favoris&body=http://vpictu.re/&ui=2&tf=1
+
+https://www.tumblr.com/login?s=&t=Mon hébergeur d'image favoris&u=http://vpictu.re/&v=3
+
+https://plus.google.com/share?url=http://vpictu.re/&t=Mon hébergeur d'image favoris
